@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyeto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            /* Elimina los puntos de la lista */
+            padding: 0;
+            /* Elimina el padding por defecto */
+        }
+
+        li {
+            margin: 10px 0;
+            /* Espaciado entre los elementos de la lista */
+        }
+
+        a {
+            text-decoration: none;
+            /* Elimina el subrayado de los enlaces */
+            color: rgb(0, 102, 255);
+            /* Color del texto del enlace */
+        }
+
+        a:hover {
+            text-decoration: underline;
+            /* Subrayado al pasar el ratón */
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <h1>Ensayo numero 1</h1>
+        <li><a href="#">Primera parte</a></li>
+        <li><a href="#">Segunda parte</a></li>
+        <li><a href="#">Tercera parte</a></li>
+        <li><a href="#">Cuarta imagen</a></li>
+        <h1>Moto De Alto Cilindraje</h1>
+    </ol>
+    <img src="https://i.pinimg.com/736x/16/2f/cd/162fcd125af981850e0857345a6f88a8.jpg" alt="moto alto cilindraje"
+        width="300" height="250">
+    <br>
+    <br>
+    <br>
+    <h1>Descolgando palmas</h1>
+    <iframe width="300" height="250" src="https://www.youtube.com/embed/inl00VN3Ju8"
+        title="BMW S1000RR vs Ducati Panigale V4 | Herrera vs Mejia a fuego 🔥 | Rodando con SBK Medellin"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <br>
+    <br>
+    <h1>Audio de prueba</h1>
+    <audio controls>
+        <source src=c:\Users\Desarrollo\Downloads\BMW type="audio/mpeg">
+    </audio>
+    <br>
+    <br>
+    <br>
+    <h1>Tabla</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>
+                    <h2>Nombre</h2>
+                </td>
+                <td>
+                    <h2>Edad</h2>
+                </td>
+                <td>
+                    <h2>Barrio</h2>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>samuel</td>
+                <td>15</td>
+                <td>pedregal</td>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>30</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr>
+                <td>julian</td>
+                <td>16</td>
+                <td>girardot</td>
+            </tr>
+            <tr>
+                <td>valeria</td>
+                <td>16</td>
+                <td>gratamira</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <h1>Formulario de Registro</h1>
+
+    <!-- Formulario de registro -->
+    <form action="script" method="post">
+
+        <!-- Campo de texto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+        <br><br>
+
+        <!-- Campo de correo -->
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+
+        <br><br>
+
+        <!-- Campo de contraseña -->
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+
+        <br><br>
+
+        <!-- Campo numérico con min y max -->
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="15" max="100" required>
+
+        <br><br>
+
+        <!-- Selección de género -->
+        <label for="preferencia">preferencia:</label>
+        <select id="preferencia" name="preferencia" required>
+            <option value="">Seleccione...</option>
+            <option value="Cocacola">Masculino</option>
+            <option value="Pepsi">Femenino</option>
+            <option value="Agua">Otro</option>
+        </select>
+
+        <br><br>
+
+        <!-- Área de texto -->
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Escribe un mensaje"></textarea>
+
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los términos y condiciones</label>
+
+        <br><br>
+
+        <!-- rangos -->
+        <input type="range" />
+
+        <br><br>
+        <!-- radio -->
+        <p>Select a maintenance drone:</p>
+        <input type="radio" id="verde" name="color" value="verde" checked />
+        <label for="verde">Verde</label>
+        <input type="radio" id="azul" name="color" value="azul" />
+        <label for="azul">Azul</label>
+        <input type="radio" id="rojo" name="color" value="rojo" />
+        <label for="rojo">Rojo</label>
+
+        <br><br>
+
+        <!-- Botón de envío -->
+        <button type="submit">Registrarse</button>
+
+    </form>
+
+    
+</body>
+
+</html>
