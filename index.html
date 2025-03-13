@@ -9,29 +9,19 @@
         body {
             font-family: Arial, sans-serif;
         }
-
         ul {
             list-style-type: none;
-            /* Elimina los puntos de la lista */
             padding: 0;
-            /* Elimina el padding por defecto */
         }
-
         li {
-            margin: 10px 0;
-            /* Espaciado entre los elementos de la lista */
+            margin: 10px 0;            
         }
-
         a {
-            text-decoration: none;
-            /* Elimina el subrayado de los enlaces */
-            color: rgb(0, 102, 255);
-            /* Color del texto del enlace */
+            text-decoration: none;            
+            color: rgb(0, 102, 255);          
         }
-
         a:hover {
-            text-decoration: underline;
-            /* Subrayado al pasar el ratón */
+            text-decoration: underline; 
         }
     </style>
 </head>
@@ -70,20 +60,14 @@
     <table border="1">
         <thead>
             <tr>
-                <td>
-                    <h2>Nombre</h2>
-                </td>
-                <td>
-                    <h2>Edad</h2>
-                </td>
-                <td>
-                    <h2>Barrio</h2>
-                </td>
+                <td><h2>Nombre</h2></td>
+                <td><h2>Edad</h2></td>
+                <td><h2>Barrio</h2></td>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>samuel</td>
+                <td>zapata</td>
                 <td>15</td>
                 <td>pedregal</td>
             </tr>
@@ -104,38 +88,31 @@
             </tr>
         </tbody>
     </table>
-    <br>
-    <br>
+
     <h1>Formulario de Registro</h1>
 
-    <!-- Formulario de registro -->
     <form action="script" method="post">
 
-        <!-- Campo de texto -->
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
         <br><br>
 
-        <!-- Campo de correo -->
         <label for="email">Correo Electrónico:</label>
         <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
 
         <br><br>
 
-        <!-- Campo de contraseña -->
         <label for="password">Contraseña:</label>
         <input type="password" id="password" name="password" minlength="6" required>
 
         <br><br>
 
-        <!-- Campo numérico con min y max -->
         <label for="edad">Edad:</label>
         <input type="number" id="edad" name="edad" min="15" max="100" required>
 
         <br><br>
 
-        <!-- Selección de género -->
         <label for="preferencia">preferencia:</label>
         <select id="preferencia" name="preferencia" required>
             <option value="">Seleccione...</option>
@@ -146,39 +123,31 @@
 
         <br><br>
 
-        <!-- Área de texto -->
         <label for="comentarios">Comentarios:</label><br>
         <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Escribe un mensaje"></textarea>
 
         <br><br>
 
-        <!-- Checkbox -->
         <input type="checkbox" id="terminos" name="terminos" required>
         <label for="terminos">Acepto los términos y condiciones</label>
 
         <br><br>
 
-        <!-- rangos -->
         <input type="range" />
 
         <br><br>
-        <!-- radio -->
-        <p>Select a maintenance drone:</p>
-        <input type="radio" id="verde" name="color" value="verde" checked />
-        <label for="verde">Verde</label>
-        <input type="radio" id="azul" name="color" value="azul" />
-        <label for="azul">Azul</label>
-        <input type="radio" id="rojo" name="color" value="rojo" />
-        <label for="rojo">Rojo</label>
+            <p>Que color lo prefieres</p>
+              <input type="radio" id="verde" name="color" value="verde" checked />
+              <label for="verde">Verde</label>
+              <input type="radio" id="azul" name="color" value="azul" />
+              <label for="azul">Azul</label>
+              <input type="radio" id="rojo" name="color" value="rojo" />
+              <label for="rojo">Rojo</label>
 
         <br><br>
 
-        <!-- Botón de envío -->
         <button type="submit">Registrarse</button>
 
-    </form>
-
-    
 </body>
 
 </html>
